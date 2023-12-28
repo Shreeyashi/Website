@@ -1,21 +1,14 @@
 .image{
-    /* width: 1380px;
-    height: 581px;
-    top: 611px;
-    left: 1410px;
-    border-radius: 0px, 0px, 24px, 24px;
-    angle: -180 deg; */
-
     width: 100%; 
     height: 450px;
     background-repeat: no-repeat; 
     /* background-attachment: fixed; */
     border-radius: 20px;
-    background-image: url("cover.jpg");
+    background-image: url("coverpic.png");
     background-size: cover;
     background-position: center;
     position: absolute;
-
+    
 }
 .right{
     background-position: top right;
@@ -72,35 +65,85 @@ li a:hover{
 .text{
     position: relative;
     color: white;
-    text-align: center ;
+    /* text-align: center ; */
     /* text-wrap: wrap; */
     /* padding-top:150px;  */
     padding-bottom: 0%;
     height: 75px;
     width: 100%;
+    top: 160px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .one{
-    font-size:large;
-    margin: 0%;
+    font-size:30px;
+    position: relative;
+    margin:0%;
+    text-align: center ;
+
 }
 .two{
-    font-size:xx-large;
+    font-size:80px;
+    position: relative;
     padding-top: 0%;
-    margin: 0%; 
+    margin:0%;
+    text-align:center ;
+
 }
 .three{
-    font-size:x-small;
+    font-size:20px;
+    position: relative;
     padding-top: 0%;
-    margin: 0%;
+    margin:0%;
+    text-align: center ;
+
 }
 .searchbox{
     position:relative;
     height:200px;
     width:70%;
     background-color: white;
-    border: solid 1px;
-    border-radius: 10px;
-    float:bottom;
+    border-radius: 16px;
     margin: auto;
-
+    top: 280PX;
+    box-shadow: 0 4px 5px 0 rgba(193, 193, 193, 0.4);
+}
+.tabs{
+    width: auto;
+    height: auto;
+    padding: 10px;
+}
+.tabs button{
+    padding: 10px 20px;
+    margin: 5px;
+    border:none;
+    background-color: white;
+    font-size: medium;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+}
+.flights{
+    width: auto;
+    display: flex;
+}
+.flights fieldset{
+    width: 250px;
+    height: 30px;
+    margin: 10px;
+    padding: 10px;
+    border: solid 1px grey;
+    border-radius:5px;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+}
+.submit{
+    float: right;
+    margin:10px;
+}
+.submit input{
+    width:130px;
+    height:33px;
+    text-align: right;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 4px 4px 5px 0 rgba(193, 193, 193, 0.4);
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
