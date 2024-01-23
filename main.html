@@ -6,8 +6,7 @@
     <title>Travel</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css'  href='main.css'>
-    <!-- <script src='main.js'></script> -->
-    
+    <script src='main.js'></script>    
 </head>
 <body>
     <div class="image">
@@ -32,13 +31,14 @@
         </div> 
         <div class="searchbox">
             <div class="tabs">
-                <button class="tablink">Flights</button>
-                <button class="tablink">Stays</button>
+                <button  class="tablink" onclick="openTab(event,'flights')">Flights</button>
+                <button  class="tablink" onclick="openTab(event,'stays')">Stays</button>
             </div>
             <!--tab contents below-->
-            <div class="flights">
+            <div id="flight" class="tabcontent">
                 <fieldset>
                     <legend>From-To</legend>
+                    
                 </fieldset>
                 <fieldset>
                     <legend>Trip</legend>
@@ -50,14 +50,246 @@
                     <legend>Passenger-Class</legend>
                 </fieldset>
             </div>
+            <!-- <div id="stay" class="tabcontent">
+                <fieldset>
+                    <legend>From-To</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Trip</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>CheckIn-CheckOut</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Room Type</legend>
+                </fieldset>
+            </div> -->
             <div class="submit">
                 <input type="button" value="Add Promocode">
-                <input type="submit" value="Show Flights"> 
+                <button class="showflight">Show Flights
+                    <img src="showflight.png">
+                </button>
             </div>
-        </div>  
+        </div> 
+    </div> 
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+<!-- Grid div-->
+
+    <div class="Plan">
+        <h1>Plan your perfect trip</h1>
+        <h5>Search Flights & Places Hire to our most popular destinations</h5>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="gridtext1">
+                    Istanbul, Turkey
+                </div>
+                <div class="gridtext2">
+                    Hotels . Flights . Resorts
+                </div>
+                <img src="1.png">
+            </div>
+            <div class="grid-item">
+                <div class="gridtext1">
+                    Istanbul, Turkey
+                </div>
+                <div class="gridtext2">
+                    Hotels . Flights . Resorts
+                </div>
+                <img src="2.png">
+            </div>
+            <div class="grid-item">
+                <div class="gridtext1">
+                    Istanbul, Turkey
+                </div>
+                <div class="gridtext2">
+                    Hotels . Flights . Resorts
+                </div>
+                <img src="3.png">
+            </div>  
+            <div class="grid-item">
+                <div class="gridtext1">
+                    Istanbul, Turkey
+                </div>
+                <div class="gridtext2">
+                    Hotels . Flights . Resorts
+                </div>
+                <img src="4.png">
+            </div>
+            <div class="grid-item">
+                <div class="gridtext1">
+                    Istanbul, Turkey
+                </div>
+                <div class="gridtext2">
+                    Hotels . Flights . Resorts
+                </div>
+                <img src="5.png">
+            </div>
+            <div class="grid-item">
+                <div class="gridtext1">
+                    Istanbul, Turkey
+                </div>
+                <div class="gridtext2">
+                    Hotels . Flights . Resorts
+                </div>
+                <img src="6.png">
+            </div>  
+            <div class="grid-item">
+                <div class="gridtext1">
+                    Istanbul, Turkey
+                </div>
+                <div class="gridtext2">
+                    Hotels . Flights . Resorts
+                </div>
+                <img src="7.png">
+            </div>
+            <div class="grid-item">
+                <div class="gridtext1">
+                    Istanbul, Turkey
+                </div>
+                <div class="gridtext2">
+                    Hotels . Flights . Resorts
+                </div>
+                <img src="8.png">
+            </div>
+            <div class="grid-item">
+                <div class="gridtext1">
+                    Istanbul, Turkey
+                </div>
+                <div class="gridtext2">
+                    Hotels . Flights . Resorts
+                </div>
+                <img src="9.png">
+            </div>  
+          </div>
     </div>
- 
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!--Two grid-->
+    <div class="grid-container2">
+        <div class="grid1">
+            <img src="10.png">
+            <div class="gridtext3">
+                Flights 
+            </div>
+            <div class="gridtext4">
+                Search Flights & Places Hire to our most popular destinations
+            </div>
+            <button class="showbtn">Show Flights
+                <img src="showflight.png">
+            </button>
+        </div>
+        <div class="grid1">
+            <img src="11.png">
+            <div class="gridtext3">
+                Hotels
+            </div>
+            <div class="gridtext4">
+                Search hotels & Places Hire to our most popular destinations
+            </div>
+            <button class="showbtn">Show Flights
+                <img src="showflight.png">
+            </button>
+        </div>
+    </div>
+    <!--Reviews grid-->
+    <div class="Reviews">
+        <h1>Reviews</h1>
+        <h5>What people says about Golobe facilities</h5>
+        <div class="Reviewgrid">
+            <div class="reviewgrid1">
+                <div class="reviewgridtext1">
+                    “A real sense of community, nurtured”
+                </div>
+                <div class="reviewgridtext2">
+                    Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for ...
+                </div>
+                <div class="reviewgridtext3">
+                    View More
+                </div>
+                <p id="star"><img src="star.png"></p>
+                <img src="review1.png">
+            </div>
+            <div class="reviewgrid1">
+                <div class="reviewgridtext1">
+                    “A real sense of community, nurtured”
+                </div>
+                <div class="reviewgridtext2">
+                    Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for ...
+                </div>
+                <div class="reviewgridtext3">
+                    View More
+                </div>
+                <img src="review2.png">
+            </div>
+            <div class="reviewgrid1">
+                <div class="reviewgridtext1">
+                    “A real sense of community, nurtured”
+                </div>
+                <div class="reviewgridtext2">
+                    Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for ...
+                </div>
+                <div class="reviewgridtext3">
+                    View More
+                </div>
+                <img src="review3.png">
+            </div>
+    </div> 
+
+<!--footer--> 
+        <div class="footer">
+            <div class="image1">
+                <img src="globe.png">
+            </div>    
+        <!-- <div class="info">
+             <div class="destinationlist">
+                <ol>Our Destinations</ol>
+                <ol>Canada</ol>
+                <ol>Alaska</ol>
+                <ol>France</ol>
+                <ol>Iceland</ol>
+                
+            </div>
+            <div class="destinationlist">
+                <ol>Our Activities</ol>
+                <ol>Northern Lights</ol>
+                <ol>Cruising & sailing</ol>
+                <ol>Multi-activities</ol>
+                <ol>Kayaing</ol>
+            
+            </div> -->
+            <!-- <div class="destinationlist">
+                <ol>Travel Blogs
+                    <li>Bali Travel Guide</li>
+                    <li>Sri Lanks Travel Guide</li>
+                    <li>Peru Travel Guide</li>
+                    <li>Bali Travel Guide</li>
+                </ol>
+            </div>
+            <div class="destinationlist">
+                <ol>About Us
+                    <li>Our Story</li>
+                    <li>Work with us</li>
+                </ol>
+            </div>
+            <div class="destinationlist">
+                <ol>Contact Us
+                    <li>Our Story</li>
+                    <li>Work with us</li>
+                </ol>
+            </div> 
+        </div> -->
+        
+        <div class="footer2">
+            <h2>Subscribe <br> Newsletter</h2>
+            <h6>The Travel</h6>
+            <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+            <input type="text" placeholder="Your email address">
+            <button>Subscribe</button>
+            <div class="footerimage">
+                <img src="footerimg.png">
+            </div>
+        </div>
+    </div> 
+    
 </body>
 </html>
